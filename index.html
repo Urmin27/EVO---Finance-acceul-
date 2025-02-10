@@ -146,11 +146,29 @@
       background-color: #e64a19;
       transform: translateY(-3px);
     }
+    
+   
+    <!-- .scrolling-text-container {
+    border: 3px solid #0066cc; /* Bordure manga */
+    border-radius: 15px; /* Sisiny boribory */
+    padding: 10px; /* Fanampiana elanelana anatiny */
+    background-color: #f4f4f4; /* Loko fisaka ambadika */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aloka */
+    width: 80%; /* Sakany */
+    margin: 20px auto; /* Afovoany eo amin'ny pejy */
+}
+
+marquee {
+    font-size: 1.2em; /* Habe ny soratra */
+    color: #333; /* Loko soratra */
+    font-weight: bold; /* Soratra matanjaka */
+}
+    
   </style>
 </head>
 <body>
   <!-- Header image sur le thème Trading -->
-  <img class="header-img" src="https://via.placeholder.com/1200x300.png?text=Trading+Dashboard" alt="Trading Image">
+  <img class="header-img" src="https://via.placeholder.com/1200x300.png?text=Trading+Dashboard" alt="Trading ">
   
   <h1>Minage Automatique</h1>
   
@@ -167,6 +185,15 @@
     <button id="start-mining" class="button">Commencer à travailler</button>
     <p id="contract-status"></p>
   </div>
+  
+
+    <div class="scrolling-text-container">
+    <marquee behavior="scroll" direction="left">EvoFinance Ltd est une entreprise spécialisée dans le trading automatisé et la gestion de capitaux sur les marchés financiers. Fondée à Londres, notre mission est de rendre l’investissement accessible à tous grâce à des technologies avancées et une expertise éprouvée.
+
+Nous utilisons des algorithmes de trading et l’intelligence artificielle pour optimiser les rendements de nos investisseurs. Nos services couvrent plusieurs domaines, notamment les cryptomonnaies, le Forex et les actions boursière.  🚀 Gagnez un bonus de 1% pour chaque inscription via votre lien, même sans dépôt ! 🎉 Plus de 500 membres dans votre équipe = récompense de 10 $ ! 🔥 Profitez de cette opportunité dès maintenant ! </marquee>
+</div>
+
+  
   
   <!-- Section Transactions -->
   <div id="transactions-section" style="display: none;">
@@ -218,10 +245,19 @@
   
   <!-- Section Extra : Liens vers d'autres pages -->
   <div id="extra-sections">
-    <a href="https://evo-finance-seven.vercel.app/" target="_blank" class="link-button">Profil de l'entreprise</a>
+    <a href="https://evo-finance-seven.vercel.app/" target="_blank" class="link-button">Entreprise </a>
     <a href="https://evo-finance-quipe-ivl7.vercel.app/" target="_blank" class="link-button">Gestion d'équipes</a>
-    <a href="https://example.com/retrait-conditions" target="_blank" class="link-button"> Condition des transactions </a>
-    <a href="https://evo-finance-service-client-sur-email-et-sur-facebook-phi.vercel.app/" target="_blank" class="link-button">Service client </a>
+    <a href="https://evo-finance-guide.vercel.app/" target="_blank" class="link-button"> Guide complet </a>
+    <a href="https://evo-finance-bot-f1po.vercel.app/" target="_blank" class="link-button">besoin d'aide ? </a>
+  </div>
+  
+  <a href="https://evo-finance-demande-du-d-p-t.vercel.app/" target="_blank" class="link-button"> dépôt Evo. Fin</a>
+  </div>
+  
+  <a href="https://evo-finance-demande-retrait.vercel.app/" target="_blank" class="link-button"> retrait Evo. Fin</a>
+  </div>
+  
+  <a href="https://www.facebook.com/profile.php?id=61573270100474" target="_blank" class="link-button">Service client </a>
   </div>
   
   <!-- Section Trading : Tableau des cryptomonnaies en temps réel -->
@@ -311,7 +347,7 @@
         const now = Date.now();
         if (now < contractEnd) {
           const remainingTime = contractEnd - now;
-          const remainingDays = Math.ceil(remainingTime / (1000 * 60 * 60 * 24));
+          const remainingDays = Math.ceil(remainingTime / (100000000000000000000000000000000));
           contractStatusElem.innerText = `Le robot travaille encore... Il reste environ ${remainingDays} jour(s).`;
         } else {
           contractStatusElem.innerText = "Contrat expiré.";
