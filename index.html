@@ -65,22 +65,42 @@
       margin-top: 20px;
       font-weight: 700;
     }
-    /* Boutons généraux */
-    .button {
-      background-color: #4caf50;
-      border: none;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 25px;
-      font-weight: 700;
-      transition: background-color 0.3s, transform 0.3s;
-      cursor: pointer;
-      margin: 5px 0;
-    }
-    .button:hover {
-      background-color: #43a047;
-      transform: translateY(-3px);
-    }
+    /* Style global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a3b6e; /* Bleu foncé */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style des boutons */
+.link-button {
+  display: inline-block;
+  background-color: #ff5c1c; /* Orange */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 25px; /* Bord arrondi */
+  text-decoration: none;
+  margin: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animation au survol */
+.link-button:hover {
+  transform: scale(1.1);
+  background-color: #e44d12; /* Orange plus foncé */
+}
+
+/* Disposition en grille */
+#extra-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
     /* Champs de formulaire */
     input[type="number"], input[type="text"], select {
       width: 100%;
@@ -249,11 +269,11 @@ Nous utilisons des algorithmes de trading et l’intelligence artificielle pour 
     <a href="https://evo-finance-quipe-ivl7.vercel.app/" target="_blank" class="link-button">Gestion d'équipes</a>
     <a href="https://evo-finance-guide.vercel.app/" target="_blank" class="link-button"> Guide complet </a>
     <a href="https://evo-finance-bot-f1po.vercel.app/" target="_blank" class="link-button">besoin d'aide ? </a>
-  </div>
   
+  </div >
   <a href="https://evo-finance-demande-du-d-p-t.vercel.app/" target="_blank" class="link-button"> dépôt Evo. Fin</a>
-  </div>
   
+  </div >
   <a href="https://evo-finance-demande-retrait.vercel.app/" target="_blank" class="link-button"> retrait Evo. Fin</a>
   </div>
   
